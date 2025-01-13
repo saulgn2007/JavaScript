@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        function resultado(numero1 , numero2)
+        {
+            function suma(numero1 , numero2)
+            {
+                suma = numero1 + numero2;
+                return suma;
+            }
+            function diferencia(numero1 , numero2)
+            {
+                diferencia = numero1 - numero2;
+                return diferencia
+            }
+            function producto(numero1 , numero2)
+            {  
+                producto = numero1 * numero2;
+                return producto;
+            }
+            function division(numero1 , numero2)
+            {   
+                division = numero2 / numero1;
+                return division;
+            }
+                let textoEnPantalla;
+                if (numero1 > numero2) {
+                    let sumaResultado=suma(numero1 , numero2);
+                    let diferenciaResultado=diferencia(numero1 , numero2);
+                    textoEnPantalla="El numero 1 es mayor al número 2 <br>"+"La suma de ambos números es: " + sumaResultado + "<br>"+"La diferencia de ambos números es: " + diferenciaResultado;
+                    
+                } else {
+                    let productoResultado=producto(numero1 , numero2);
+                    let divisionResultado=division(numero1 , numero2);
+                    textoEnPantalla="El numero 1 es menor al número 2 <br>"+"El producto de ambos números es: " + productoResultado + "<br>"+"La división de ambos números es: " + divisionResultado;
+                    
+                }
+                return textoEnPantalla;
+            }
+            numero1 = parseInt(prompt("Introduzca el primer número"));
+            numero2 = parseInt(prompt("Introduzca el segundo número"));
+            let resultadoTotal=resultado(numero1 , numero2)
+            document.write(resultadoTotal)
+        </script>
+</body>
+</html>

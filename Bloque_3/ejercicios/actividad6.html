@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_6</title>
+</head>
+<body>
+        <label for="pizzaSelect">Selecciona una pizza:</label>
+        <select id="pizzaSelect">
+            <option value="4">Queso</option>
+            <option value="6">Jamón y Queso</option>
+            <option value="10">Especial</option>
+        </select><br><br>
+        <label for="cantidad">Cantidad de pizzas:</label>
+        <input type="number" id="cantidad" min="1"><br><br>
+        <label for="total">Total a pagar (€):</label>
+        <input type="text" id="total" readonly><br><br>
+        <button onclick="calcularTotal()">Calcular Total a pagar</button><br><br>
+    <script>
+        function calcularTotal() {
+            let pizzaSelect = document.getElementById("pizzaSelect");
+            let precioPizza = pizzaSelect.value;
+            let cantidad = parseInt(document.getElementById("cantidad").value);
+            let total = precioPizza * cantidad;
+            document.getElementById("total").value = total;
+        }
+    </script>
+</body>
+</html>

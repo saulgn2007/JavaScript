@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function enteros(numero)
+        {
+            let resultado; 
+            if(numero>0)
+            {
+                resultado="Es un numero entero"
+            }
+            else
+            {
+                if(numero<0)
+                {
+                    resultado="Es un numero negativo"
+                }
+                else
+                {
+                    resultado="El numero es 0"
+                }
+            }
+            return=resultado
+        }
+        numero=parseInt(prompt("Escribe un numero"))
+        let resultado_final=enteros(numero)
+        document.write(resultado_final)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_5</title>
+</head>
+<body>
+    <form>
+        <p>Pizzas:</p>
+        <p><select id="pizza" onChange="mostrarSeleccionPizza()">
+                <option value="18€">Jamon y Queso</option>
+                <option value="15€">Muzzarella</option>
+                <option value="17€">Morrones</option>
+            </select></p>
+        <p><input type="text" id="mensaje"></p>
+    </form>
+
+    <script>
+        function mostrarSeleccionPizza() {
+            document.getElementById('mensaje').value =
+                document.getElementById('pizza').options[document.getElementById('pizza').selectedIndex].value;
+        }
+    </script>
+</body>
+</html>

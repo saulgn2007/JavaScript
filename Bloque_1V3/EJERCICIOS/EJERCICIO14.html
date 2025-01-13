@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Diniero(sueldo, años)
+        {
+            let resultado
+            if(sueldo<500 && años>=10)
+                {
+                    resultado= "La suma es "+((sueldo*20)/100+sueldo)+ "€"
+                }
+                else
+                {
+                    if(sueldo<500 && años<10)
+                        {
+                            resultado= "La suma es "+((sueldo*5)/100+sueldo)+ "€"  
+                        }
+                        else
+                        {
+                            if(sueldo>=500)
+                                {
+                                    resultado= "No obtiene ningún porcentaje extra, por lo que el sueldo total queda así: " +sueldo+ "€"
+                                }
+                        }
+                }
+                return resultado
+        }
+        sueldo=parseInt(prompt("Escribe el sueldo"))
+        años=parseInt(prompt("Escribe los años de antiguedad"))
+        let resultado_total=Diniero(sueldo, años)
+        document.write(resultado_total)
+    </script>
+</body>
+</html>

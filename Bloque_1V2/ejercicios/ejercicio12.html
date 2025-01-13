@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function NumeroCifras()
+        {
+            let numero;
+                numero=parseInt(prompt("Escribe un numero de 1,2 o 3 cifras"))
+            if(numero>=0 & numero<10)
+            {
+            return "En numero tiene una cifra"
+            }
+            else
+            {
+                if(numero>=10 & numero<100)
+                {
+                    return "El numero tiene dos cifras"
+                }
+                else
+                {
+                    if(numero>=100 & numero<1000)
+                    {
+                        return "El numero tiene tres cifras"
+                    }
+                    else 
+                    {
+                        return "Ha introducido un valor erroneo"
+                    }
+                }
+            }
+        } 
+        let resultado=NumeroCifras()
+        document.write(resultado)
+    </script>
+</body>
+</html>

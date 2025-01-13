@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_10</title>
+</head>
+<body>
+    <script>
+        function fecha()
+        {
+            let resultado
+            let fecha
+            fecha = new Date();
+            let mes = fecha.getMonth();
+            if (mes < 4) 
+            {
+                resultado=('Nos encontramos en el primer cuatrimestre del año');
+            } 
+                else 
+                {
+                    if (mes < 8) 
+                    {
+                        resultado=('Nos encontramos en el segundo cuatrimestre del año');
+                    } 
+                        else 
+                        {
+                            resultado=('Nos encontramos en el tercer cuatrimestre del año');
+                        }
+                }
+        return resultado
+        }
+        let resultadoFinal=fecha()
+        document.write(resultadoFinal)
+    </script>
+</body>
+</html>

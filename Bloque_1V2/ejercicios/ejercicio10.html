@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ContarDigitos()
+        {    
+            let numero;
+            numero=parseInt(prompt('Ingrese un valor comprendido entre 1 y 99:'));
+            if (numero < 10) 
+            {
+                return 'El valor ingresado tiene un dígito'
+            } 
+            else 
+            {
+                return 'El valor ingresado tiene dos dígitos'
+            }   
+        }    
+        let resultado=ContarDigitos()
+        document.write(resultado)    
+    </script>
+</body>
+</html>

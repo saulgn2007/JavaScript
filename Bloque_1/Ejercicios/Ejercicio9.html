@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota=0;
+        let contador=1;
+        let totalnota=0;
+        for(contador=1; contador<=3; contador++)
+            {
+            nota=parseInt(prompt("Introduzca tres notas"));
+            totalnota=totalnota+nota;
+            }
+        if(totalnota/3>=4)
+            {
+            document.write("Regular")
+            }
+            else{
+                document.write("Reprobado")
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function operacion(numero1, numero2, numero3)
+        {
+            if(numero1==numero2 & numero1==numero3)
+            {
+                resultado= numero1+numero2*numero3
+            }
+            else
+            {
+                resultado= "los numeros no son iguales"
+            }
+            return resultado
+        }
+        numero1=parseInt(prompt("Escribe el primer numero"));
+        numero2=parseInt(prompt("Escribe el segundo numero"));
+        numero3=parseInt(prompt("Escribe el tercer numero"));
+        let resultado_total=operacion(numero1, numero2, numero3)
+        document.write(resultado_total)
+    </script>
+</body>
+</html>
