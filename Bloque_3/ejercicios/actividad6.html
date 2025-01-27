@@ -17,14 +17,6 @@
         <label for="total">Total a pagar (€):</label>
         <input type="text" id="total" readonly><br><br>
         <button onclick="calcularTotal()">Calcular Total a pagar</button><br><br>
-    <script>
-        function calcularTotal() {
-            let pizzaSelect = document.getElementById("pizzaSelect");
-            let precioPizza = pizzaSelect.value;
-            let cantidad = parseInt(document.getElementById("cantidad").value);
-            let total = precioPizza * cantidad;
-            document.getElementById("total").value = total;
-        }
-    </script>
+    <script src="../js/actividad6.js"></script>
 </body>
 </html>
