@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_2</title>
+</head>
+<body>
+    <script>
+        function numeroARomano(traduccion)
+        {
+            traduccion=parseInt(prompt("Inrtroduce un numeor entre el 1 y el 10"))
+                switch(traduccion)
+                {
+                    case 1:
+                    resultado='I';
+                    break;
+                    case 2:
+                    resultado='II';
+                    break;
+                    case 3:
+                    resultado='III';
+                    break;
+                    case 4:
+                    resultado='IV';
+                    break;
+                    case 5:
+                    resultado='V';
+                    break;
+                    case 6:
+                    resultado='VI';
+                    break;
+                    case 7:
+                    resultado='VII';
+                    break;
+                    case 8:
+                    resultado='VII';
+                    break;
+                    case 9:
+                    resultado='IX';
+                    break;
+                    case 10:
+                    resultado='X';
+                    break;
+                    default: 
+                    resultado='Introduzca el numero entre el 1 y el 10';
+                }
+           
+            return resultado
+        }
+        let resultadoFinal=numeroARomano()
+        document.write(resultadoFinal)
+    </script>
+</body>
+</html>

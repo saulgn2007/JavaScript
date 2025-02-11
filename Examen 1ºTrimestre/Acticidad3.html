@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_3</title>
+</head>
+<body>
+    <script>
+        function tipoTriangulo()
+        {
+            let lado1=parseInt(prompt("Introducel el primer lado"))
+            let lado2=parseInt(prompt("Introducel el segundo lado"))
+            let lado3=parseInt(prompt("Introducel el tercer lado"))
+            let resultado
+
+            if(lado1==lado2 && lado1==lado3)
+            {
+                resultado="El triángulo es equilatero"
+            }
+            else
+                {
+                    if(lado1!=lado2 && lado1!=lado3)
+                    {
+                        resultado="El triángulo es escaleno"
+                    }else
+                    {
+                        resultado="El triángulo es isósceles"
+                    }        
+                }
+        return resultado
+
+        }
+        let resultadoFinal=tipoTriangulo()
+        document.write(resultadoFinal)
+    </script>
+</body>
+</html>
